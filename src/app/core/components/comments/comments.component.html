@@ -1,0 +1,5 @@
+<app-post *ngIf="post" [fromComments]="true" class="w-100" [post]="post" ></app-post>
+<h4 class="d-flex">{{'COMMENTS'|translate}}</h4>
+<div class="d-flex" *ngFor="let comment of comments">
+  <app-comment class="w-100" [comment]="comment"></app-comment>
+</div>

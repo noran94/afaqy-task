@@ -1,0 +1,6 @@
+<div class="d-flex">
+  <button class="btn btn-primary" (click)="addPost()">{{'ADD_POST'|translate}}</button>
+</div>
+<div *ngFor="let post of posts">
+  <app-post [fromComments]="false" class="w-100" [post]="post" (postDetails)="navigateToDetails($event)" (postID)="deletePostWithId($event)" (getComments)="getCommentsByID($event)"></app-post>
+</div>

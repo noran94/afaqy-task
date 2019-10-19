@@ -1,0 +1,24 @@
+.post-title{
+    cursor: pointer;
+    text-align: -webkit-auto !important;
+   &:hover{
+        color: blue;
+    }
+}
+.delete-icon{
+    cursor: pointer;
+    &:hover{
+        color: red;
+    }
+}
+.comment{
+    cursor: pointer;
+    color: cornflowerblue !important;
+    &:hover{
+        color: blue !important;
+        text-decoration-line: underline !important;    
+    }
+};
+.post-body{
+    text-align: -webkit-auto !important;
+}

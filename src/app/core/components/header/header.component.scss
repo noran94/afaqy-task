@@ -1,0 +1,10 @@
+.header-content{
+    background-color:#f7f7f7 !important;
+    .header-title{
+        cursor: pointer;
+        &:hover{
+            text-decoration-line: underline !important;
+            color: blue !important;
+        }
+    }
+}

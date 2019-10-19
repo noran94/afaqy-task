@@ -1,0 +1,8 @@
+<div class="header-content d-flex  align-items-center justify-content-between p-3 px-md-4 mb-3 border-bottom box-shadow">
+  <h5 class="d-flex my-0 font-weight-normal header-title" [routerLink]="['/']">AFAQY</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <!-- <a class="p-2 text-dark" [routerLink]="['/posts']">{{'POSTS'|translate}}</a> -->
+    <a class="header-title" *ngIf="currentLang === 'ar'" (click)="switchLang('en')">{{'ENGLISH'|translate}}</a>
+    <a class="header-title" *ngIf="currentLang ==='en'" (click)="switchLang('ar')">{{'ARABIC'|translate}}</a>
+  </nav>
+</div>
